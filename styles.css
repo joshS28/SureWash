@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    width: max-width;
+}
+.square {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    padding-bottom : 45%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+/*.img_1-1{background-image:url('bus.png');
+border-radius: 25px;
+    border: 2px solid black;}
+.img_1-1:hover{
+        opacity: 0.5;
+}
+.img_1-2{background-image:url('dart.jpg');
+border-radius: 25px;
+    border: 2px solid black;}
+.img_2-1{background-image:url('luas.png');
+border-radius: 25px;
+    border: 2px solid black;}
+.img_2-2{background-image:url('bike.png');
+border-radius: 25px;
+    border: 2px solid black;}*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: center;
+    padding: 5px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    opacity: 1.0;
+    display:block;
+    margin:auto;
+}
+body{
+    background-color: #FFFFFF;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display: inline-block;
+    max-width: 1000px;
+}
+.header {
+    color: black;
+    text-align: bottom;
+    padding: 15px;
+    width: max-width;
+    position: relative;
+}
+.chart{
+   margin: auto;
+}
+.TrainTable{
+    margin: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid rgb(20,140,152);
+    background-color: rgb(20,140,152);
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: rgb(18,134,148);
+}
+.aside {
+    background-color: rgb(20,140,152);
+    padding: 15px;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    border: 2px solid white;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8ff;
+}
+tr:nth-child(odd) {
+    background-color: #f8f8fa;
+}
+tr:first-child {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(20,140,152);
+    color: #FFFFFF;
+}
+p{
+    margin: 0px;
+}
+.logo-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
